@@ -93,6 +93,7 @@
     .starter, .desserts, .plats__principal
     {
       width: 50%;
+      margin-left: 25%;
     }
 }
 
@@ -316,7 +317,7 @@
 .btn 
 {
     margin-bottom: -17px;
-    padding-left: 7%;
+    padding-left: 13%;
 }
   
 .fonction__boutton
