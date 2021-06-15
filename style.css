@@ -84,6 +84,7 @@
 @media (min-width: 540px) {
   .starter, .desserts, .plats__principal {
     width: 50%;
+    margin-left: 25%;
   }
 }
 
