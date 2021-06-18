@@ -882,8 +882,8 @@ ul {
 }
 
 .starter__menu:hover .fas.fa-check-circle.fa-lg, .desserts__menu:hover .fas.fa-check-circle.fa-lg, .plats__menu:hover .fas.fa-check-circle.fa-lg {
-  -webkit-animation: moveCircle 1.25s;
-          animation: moveCircle 1.25s;
+  -webkit-animation: moveCircle 1s;
+          animation: moveCircle 1s;
 }
 
 .loader {
@@ -931,62 +931,42 @@ ul {
   }
 }
 
-@keyframes spinner {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  50% {
-    top: 0;
-    opacity: 1;
-  }
-  99% {
-    top: 0;
-    opacity: 0;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes slidefood {
-  0% {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slidefood {
-  0% {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes moveCircle {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes moveCircle {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.starter, .desserts, .plats__principal
+{
+    display: block;
+    margin: auto;
+    width: 50%;
+    animation: menu__glisse 3s;
+}
+
+.plats__principal
+{
+    animation: menu__glisse 6s;
+}
+  
+.desserts 
+{
+    animation: menu__glisse 9s;
+}
+
+@keyframes menu__glisse 
+{
+    0% 
+    {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translateY(0);
+      opacity: 1;
+    }
 }
 /*# sourceMappingURL=style.css.map */
