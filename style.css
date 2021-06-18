@@ -938,12 +938,15 @@ ul {
   }
 }
 
-.starter, .desserts, .plats__principal
+@media (min-width: 540px)
 {
-    display: block;
-    margin: auto;
-    width: 50%;
-    animation: menu__glisse 3s;
+    .starter, .desserts, .plats__principal
+    {
+        display: block;
+        margin: auto;
+        width: 50%;
+        animation: menu__glisse 3s;
+    }
 }
 
 .plats__principal
