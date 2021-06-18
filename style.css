@@ -912,7 +912,7 @@ ul {
   margin: auto;
 }
 
-@-webkit-keyframes spinner {
+@keyframes spinner {
   0% {
     top: 0;
     opacity: 1;
