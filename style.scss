@@ -835,20 +835,10 @@ div {
 }
 }
 
-@keyframes slidefood {
-0% {
-    transform: translateY(500px);
-    opacity: 0;
-}
-
-100% {
-    transform: translateY(0);
-    opacity: 1;
-}
-}
 
 @keyframes moveCircle {
 100% {
     transform: rotate(360deg);
 }
 }
+
